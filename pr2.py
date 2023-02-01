@@ -1,4 +1,7 @@
 temp = int(input("Введите год: "))
+answer = 0
+wholePart = 0
+remains = 0
 i = 1
 while i <= 12:
     if i == 1 or i == 3 or i == 5 or i == 7 or i == 8 or i == 10 or i == 12:
