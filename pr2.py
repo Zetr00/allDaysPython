@@ -14,7 +14,7 @@ while i <= 12:
     elif i == 2:
         ii = 1
         if temp % 4 == 0:
-            if temp % 100 == 0 and temp % 400 == 0:
+            if temp % 100 == 0 and temp % 400 == 0 or temp % 100 != 0:
                 while ii <= 29:
                     wholePart = ii // 10
                     remains =  ii % 10
