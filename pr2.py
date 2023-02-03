@@ -14,11 +14,18 @@ while i <= 12:
     elif i == 2:
         ii = 1
         if temp % 4 == 0:
-            while ii <= 29:
-                wholePart = ii // 10
-                remains =  ii % 10
-                answer += wholePart + remains
-                ii += 1
+            if temp % 100 == 0 and temp % 400 == 0:
+                while ii <= 29:
+                    wholePart = ii // 10
+                    remains =  ii % 10
+                    answer += wholePart + remains
+                    ii += 1
+            elif temp % 100 == 0 and temp % 400 != 0:
+                while ii <= 28:
+                    wholePart = ii // 10
+                    remains =  ii % 10
+                    answer += wholePart + remains
+                    ii += 1
         else:
             while ii <= 28:
                 wholePart = ii // 10
